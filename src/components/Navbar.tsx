@@ -7,6 +7,7 @@ const navLinks = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
+  {name:"Internships", href:"#internship"},
 ];
 
 export function Navbar() {

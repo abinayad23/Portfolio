@@ -24,10 +24,10 @@ export function ContactSection() {
               <Mail size={18} className="text-primary" />
               <a href="mailto:abinayadurai152@gmail.com">abinayadurai152@gmail.com</a>
             </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
+            {/* <div className="flex items-center gap-2 text-muted-foreground">
               <Phone size={18} className="text-primary" />
               <span>+91 9025048298</span>
-            </div>
+            </div> */}
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin size={18} className="text-primary" />
               <span>Coimbatore, Tamil Nadu</span>

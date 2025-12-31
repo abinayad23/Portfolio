@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
       <div
@@ -13,31 +13,34 @@ export function HeroSection() {
 
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* 🔹 LEFT WIDER THAN RIGHT */}
           <div className="grid md:grid-cols-[1.4fr_1fr] gap-12 items-center">
+
             {/* ================= LEFT CONTENT ================= */}
             <div className="text-center md:text-left order-2 md:order-1">
               <p
                 className="text-primary font-mono text-sm mb-6 animate-fade-up"
                 style={{ animationDelay: "0.1s" }}
               >
-                Hi, My name is
+                Hi, my name is
               </p>
 
               <h1
-                className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-up"
+                className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up"
                 style={{ animationDelay: "0.2s" }}
               >
                 <span className="text-foreground">Abinaya Durai</span>
               </h1>
 
-              {/* Animated Roles */}
-              {/* 🔹 PRIMARY: Animated Roles */}
+              {/* 🔹 Animated Roles with "I'm a" */}
               <div
-                className="h-10 overflow-hidden mb-4 animate-fade-up text-center"
-                style={{ animationDelay: "0.15s" }}
+                className="h-10 overflow-hidden mb-6 animate-fade-up flex items-center justify-center md:justify-start gap-2"
+                style={{ animationDelay: "0.25s" }}
               >
-                <div className="role-slider text-2xl md:text-3xl font-semibold text-primary tracking-wide">
+                <span className="text-xl md:text-2xl font-semibold text-muted-foreground">
+                  I'm a
+                </span>
+
+                <div className="role-slider text-2xl md:text-3xl font-bold text-primary tracking-wide">
                   <span>Full-Stack Developer</span>
                   <span>Java & Spring Boot Enthusiast</span>
                   <span>AI / ML Explorer</span>
@@ -52,13 +55,13 @@ export function HeroSection() {
               </h2>
 
               <p
-                className="text-lg text-muted-foreground max-w-xl mb-12 leading-relaxed animate-fade-up"
+                className="text-lg text-muted-foreground max-w-xl mb-12 leading-relaxed animate-fade-up mx-auto md:mx-0"
                 style={{ animationDelay: "0.4s" }}
               >
                 I'm a{" "}
                 <span className="text-primary">Computer Science Engineering</span>{" "}
-                student crafting modern, scalable web applications. Focused on{" "}
-                <span className="text-primary">Full Stack development</span> with a
+                student crafting modern, scalable web applications with a focus on{" "}
+                <span className="text-primary">Full Stack Development</span> and a
                 growing interest in{" "}
                 <span className="text-primary">AI & Machine Learning</span>.
               </p>
@@ -89,6 +92,7 @@ export function HeroSection() {
                 >
                   <Github size={24} />
                 </a>
+
                 <a
                   href="https://linkedin.com/in/abinaya-durai-447298280"
                   target="_blank"
@@ -97,6 +101,7 @@ export function HeroSection() {
                 >
                   <Linkedin size={24} />
                 </a>
+
                 <a
                   href="mailto:abinayadurai152@gmail.com"
                   className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300"
@@ -106,23 +111,25 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* ================= RIGHT IMAGE ================= */}
+            {/* ================= RIGHT AVATAR ================= */}
             <div
               className="order-1 md:order-2 flex justify-center animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
               <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/50 to-primary/30 rounded-full blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
+                {/* Glow */}
+                <div className="absolute -inset-6 bg-gradient-to-r from-primary/40 via-purple-500/30 to-pink-500/40 rounded-full blur-3xl opacity-70 group-hover:opacity-100 transition duration-500" />
 
-                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 group-hover:border-primary/60 transition-all duration-500">
-                  <img
+                {/* Avatar */}
+                <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 via-background to-primary/30 flex items-center justify-center border border-primary/40 backdrop-blur-xl group-hover:scale-105 transition-all duration-500">
+ <img
                     src="/myphoto1.jpg"
                     alt="Abinaya Durai"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+                  />                </div>
 
-                <div className="absolute -inset-2 border-2 border-dashed border-primary/30 rounded-full animate-spin-slow" />
+                {/* Rotating ring */}
+                <div className="absolute -inset-2 rounded-full border-x-4 border-double border-primary/80 animate-spin-slow" />
               </div>
             </div>
           </div>

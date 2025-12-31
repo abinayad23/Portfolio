@@ -5,23 +5,23 @@ const featuredProjects = [
   {
     title: "BookSwap - Secondhand Book Trading Platform",
     description:
-      "A full-stack campus-focused platform enabling students to buy, sell, exchange and donate second-hand books securely.",
+      "A full-stack campus-focused platform especially for GCT enabling students to buy, sell, exchange and donate second-hand books securely.",
     features: [
       "Secure authentication with JWT and OTP email verification",
-      "Role-based access for users and admins",
+      // "Role-based access for users and admins",
       "Real-time chat and notifications",
       "Marketplace for listing and purchasing books",
       "File uploads for book images"
     ],
     tech: ["React", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "JWT", "REST API"],
-    github: "https://github.com/abinayad23",
+    github: "https://github.com/abinayad23/Second_hand_book_trading_platform",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=500&fit=crop",
     period: "Aug 2025 - Nov 2025",
   },
   {
     title: "AI Meeting Scheduler",
     description:
-      "An AI-powered scheduling platform that uses a chatbot to profile users, connect them with professionals, and automate meeting scheduling.",
+      "An AI-powered scheduling platform that uses a chatbot to profile users, connect them with professionals, and automate meeting scheduling. It is a academic lab team project and I implemented the frontend using Next.js, TypeScript, and SCSS to create responsive and user-friendly interfaces.",
     features: [
       "Chatbot-driven user interaction and profiling",
       "Connects users with relevant professionals",
@@ -30,7 +30,7 @@ const featuredProjects = [
       "Responsive and accessible UI"
     ],
     tech: ["Next.js", "TypeScript", "SCSS", "AI Integration"],
-    github: "https://github.com/abinayad23",
+    github: "https://github.com/aleena-joseph-86/AI_meeting_scheduler",
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop",
     period: "Feb 2025 - May 2025",
   },
@@ -38,20 +38,35 @@ const featuredProjects = [
 
 
 const internships = [
+ {
+  title: "Frontend Development Intern",
+  company: "Haqto Technologies Pvt. Ltd., Coimbatore",
+  description:
+    "Learned and applied frontend development concepts by building and styling responsive user interfaces using HTML, CSS, and JavaScript. Gained hands-on experience with React.js for component-based development and Redux for basic state management. Worked on UI design and layout creation using Canva, while following standard SDLC practices and understanding real-world frontend development workflows.",
+  tech: ["HTML", "CSS", "JavaScript", "React.js", "Redux", "Canva", "SDLC"],
+  period: "July 2025 - August 2025",
+}
+,
   {
-    title: "Frontend Development Intern",
-    company: "Haqto Technologies, Coimbatore",
-    description: "Learned and practiced React.js, HTML, CSS, JavaScript, Redux, and Canva. Enhanced understanding of component-based development and state management.",
-    tech: ["React.js", "Redux", "JavaScript", "CSS"],
-    period: "July 2025 - August 2025",
-  },
+  title: "Python Development Intern",
+  company: "Auro Tech Solutions Pvt. Ltd., Thanjavur",
+  description:
+    "Completed a one-month Python development internship with hands-on experience in building mini projects such as an ATM Simulation System, QR Code Generator, and Timer application, focusing on core Python concepts, object-oriented programming,problem-solving, and practical application of software development concepts in a remote learning-based environment..",
+  tech: ["Python", "OOP", "Problem Solving"],
+  period: "May 2024 - June 2024",
+}
+,
+  
   {
-    title: "Python Development Intern",
-    company: "Auro Tech Solutions, Thanjavur",
-    description: "Developed Python-based mini projects including ATM simulation system, QR Code Generator, and Timer application using core Python concepts.",
-    tech: ["Python", "OOP", "Mini Projects"],
-    period: "May 2024 - June 2024",
-  },
+  title: "Full Stack Development Intern",
+  company: "NoviTech R&D Private Limited, Coimbatore",
+  description:
+    "Gained foundational knowledge of full stack web development through guided learning and hands-on practice. Worked with HTML, CSS, and JavaScript to build responsive user interfaces, explored React.js for component-based frontend development, and learned backend fundamentals using Node.js and MongoDB. Developed an understanding of client–server architecture, RESTful concepts, and basic database operations while following structured development workflows.",
+  tech: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "MongoDB"],
+  period: "April 2024 - May 2024",
+}
+
+  ,
 ];
 
 const otherProjects = [
@@ -160,8 +175,8 @@ export function ProjectsSection() {
             ))}
           </div>
 
-           {/* Other Projects */}
-          <h4 className="text-xl font-semibold text-center mb-8 mt-20">Other Noteworthy Projects</h4>
+           {/* Other Projects*/}
+          {/* <h4 className="text-xl font-semibold text-center mb-8 mt-20">Other Noteworthy Projects</h4>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {otherProjects.map((project, index) => (
               <div
@@ -207,9 +222,9 @@ export function ProjectsSection() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
-          {/* Internships */}
+          {/* Internships
           <h4 className="text-xl font-semibold text-center mb-8 mt-20">Internship Experience</h4>
           <div className="grid-cols-2 gap-6 mb-16 ">
             {internships.map((internship, index) => (
@@ -238,10 +253,10 @@ export function ProjectsSection() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Certificates */}
-          <h4 className="text-xl font-semibold text-center mb-8 flex items-center justify-center gap-2">
+          {/* <h4 className="text-xl font-semibold text-center mb-8 flex items-center justify-center gap-2">
             <Award className="text-primary" size={24} />
             Certifications & Achievements
           </h4>
@@ -255,7 +270,7 @@ export function ProjectsSection() {
                 <p className="text-sm text-muted-foreground">{cert}</p>
               </div>
             ))}
-          </div>
+          </div>  */}
         </div>
       </div>
     </section>
