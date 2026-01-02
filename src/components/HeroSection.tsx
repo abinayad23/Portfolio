@@ -21,7 +21,7 @@ export function HeroSection() {
                 className="text-primary font-mono text-sm mb-6 animate-fade-up"
                 style={{ animationDelay: "0.1s" }}
               >
-                Hi, my name is
+                Hello, I'm
               </p>
 
               <h1
@@ -32,38 +32,42 @@ export function HeroSection() {
               </h1>
 
               {/* 🔹 Animated Roles with "I'm a" */}
-              <div
-                className="h-10 overflow-hidden mb-6 animate-fade-up flex items-center justify-center md:justify-start gap-2"
-                style={{ animationDelay: "0.25s" }}
-              >
-                <span className="text-xl md:text-2xl font-semibold text-muted-foreground">
-                  I'm a
-                </span>
-
-                <div className="role-slider text-2xl md:text-3xl font-bold text-primary tracking-wide">
-                  <span>Full-Stack Developer</span>
-                  <span>Java & Spring Boot Enthusiast</span>
-                  <span>AI / ML Explorer</span>
-                </div>
-              </div>
+              
 
               <h2
                 className="text-lg md:text-xl lg:text-2xl font-bold text-muted-foreground mb-8 animate-fade-up"
                 style={{ animationDelay: "0.3s" }}
               >
-                I build things for the web.
+                Building things for the web.
               </h2>
+
+              <div
+  className="mb-6 animate-fade-up flex justify-center md:justify-start gap-2 flex-col sm:flex-row items-center"
+  style={{ animationDelay: "0.25s" }}
+>
+  <span className="text-xl md:text-2xl font-medium text-muted-foreground">
+    I'm a
+  </span>
+
+  <div className="role-slider font-bold text-primary tracking-wide flex flex-col text-xl md:text-2xl">
+    <span>Full-Stack Developer</span>
+    <span>Java & Spring Boot Enthusiast</span>
+    <span>AI / ML Explorer</span>
+  </div>
+
+
+              </div>
 
               <p
                 className="text-lg text-muted-foreground max-w-xl mb-12 leading-relaxed animate-fade-up mx-auto md:mx-0"
                 style={{ animationDelay: "0.4s" }}
               >
-                I'm a{" "}
+                And a{" "}
                 <span className="text-primary">Computer Science Engineering</span>{" "}
                 student crafting modern, scalable web applications with a focus on{" "}
-                <span className="text-primary">Full Stack Development</span> and a
+                Full Stack Development and a
                 growing interest in{" "}
-                <span className="text-primary">AI & Machine Learning</span>.
+                AI & Machine Learning.
               </p>
 
               {/* Buttons */}
