@@ -48,7 +48,7 @@ export default function InternshipsSection() {
 
   return (
     <section id="internship" className="max-w-6xl mx-auto px-4">
-      <h4 className="text-2xl md:text-3xl font-bold text-center mb-14 mt-24">
+      <h4 className="text-2xl md:text-3xl font-bold text-center mb-14 ">
         Internship Experience
       </h4>
 

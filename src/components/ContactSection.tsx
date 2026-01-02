@@ -6,7 +6,7 @@ export function ContactSection() {
   const { ref, isInView } = useInView<HTMLElement>({ threshold: 0.2 });
 
   return (
-    <section id="contact" className="py-32 relative" ref={ref}>
+    <section id="contact" className="pb-32 relative" ref={ref}>
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
